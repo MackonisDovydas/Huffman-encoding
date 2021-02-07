@@ -472,7 +472,6 @@ def findContext(bites, degree):
                  collection.append(bit)
                  nextIsGood = False
         context_huffman_list.append([context, context_table])
-        print(len(context_huffman_list))
         context_table = []
         collection = []
     return context_huffman_list
@@ -539,7 +538,6 @@ def encode_bite(bite, huffman_list):
 
 if __name__ == "__main__":
 
-    sys.argv = ['huffman.py', 'data/wp2506797.jpg', '1', '1']
     start = time.time()
     file_name = sys.argv[1]  # Paduodam failo pavadinimą per argumentą
     degree = sys.argv[2]
